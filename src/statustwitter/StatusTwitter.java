@@ -31,10 +31,10 @@ public class StatusTwitter {
 
         Twitter mitwitter = new TwitterFactory().getInstance();
 
-        Query query2 = new Query("#Cangas");
+        Query query2 = new Query("#Vigo");
         QueryResult result2 = twitter.search(query2);
         for (Status status : result2.getTweets()) {
-            System.out.println("@" + status.getUser().getScreenName() + ":" + status.getText());
+            System.out.println("nombre" + status.getUser().getScreenName() + ": " + status.getText());
         }
     }
 }
